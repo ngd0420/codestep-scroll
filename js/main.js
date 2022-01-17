@@ -3,7 +3,7 @@
 const headerElement = document.getElementById('header');
 document.addEventListener('scroll', () => {
 let scrollY = window.pageYOffset;
-console.log('scrollY');
+// console.log('scrollY');
 
 if(scrollY > 140){
   headerElement.classList.add('active');
@@ -12,9 +12,9 @@ if(scrollY > 140){
 }
 });
 const targetElement = document.querySelectorAll(".animationTarget");
-console.log("画面の高さ", window.innerHeight)
+// console.log("画面の高さ", window.innerHeight)
 document.addEventListener("scroll", () =>{
-  console.log(targetElement);
+//   console.log(targetElement);
 for (let i = 0; i < targetElement.length; i++){
   const getElementDistance = targetElement[i].getBoundingClientRect().top
   // if(window.innerHeight)
@@ -26,4 +26,20 @@ for (let i = 0; i < targetElement.length; i++){
   }
 }
 });
+let contact_position = $('#contact').offset().top - $(window).height();
+let access_position = $('#access').offset().top - $(window).height();
+  // #accessが表示された場合
+  if(scroll > access_position){
+    // #contactが表示されるまでの間は、背景画像をfadeInで表示する
+    if(scroll < contact_position){
+      console.log("test");
+      $('.bg').fadeIn(500);
+    } else {
+      $('.bg').fadeOut(500);
+    }
+  // #accessが表示される前の場合
+  } else {
+    // 背景画像を表示しない
+    $('.bg').fadeOut(500);
+  }
 }

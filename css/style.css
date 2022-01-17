@@ -702,6 +702,17 @@ p {
   margin-bottom: 0;
 }
 
+.bg {
+  background: url("/img/bg.jpg") center center repeat !important;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+}
+
 /*フッター*/
 footer {
   display: flex;
