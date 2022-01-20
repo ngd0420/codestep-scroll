@@ -1,354 +1,17 @@
 @charset "UTF-8";
-/*リセットCSS*/
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
-
-/* 共通 */
 html {
   font-size: 100%;
 }
 
 body {
+  color: #050507;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #050507;
+  font-weight: 300;
 }
 
 a {
+  color: #fff;
   text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 
 img {
@@ -356,568 +19,85 @@ img {
   vertical-align: bottom;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
+li {
+  list-style: none;
 }
 
-h2 {
+/* h1タグ用 */
+.site-title {
+  font-size: 6.25rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin: 100px 0;
+}
+
+/* h2タグ用 */
+.section-title {
+  border-bottom: solid 1px #fff;
+  /* 下線をテキストと同じ幅にあわせるために設定 */
   display: inline-block;
-  border-bottom: 1px solid #fff;
   font-size: 3.75rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 45px;
 }
 
-p {
-  color: #fff;
-}
-
+/* コンテンツ幅を設定するための共通クラス */
 .wrapper {
   max-width: 800px;
+  padding: 0 30px;
   margin: 0 auto;
+}
+
+/* MainとFooter全体を囲むクラス */
+.container {
+  background: #050507;
+  color: #fff;
   text-align: center;
 }
 
-@-webkit-keyframes fadeup {
-  from {
-    opacity: 0;
-    transform: translateY(300px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeup {
-  from {
-    opacity: 0;
-    transform: translateY(300px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* ヘッダー */
-.header {
+/*
+サイドボタン
+初期状態は「translateY(60px);」で画面の右側に隠しておく
+Galleryのタイトルが画面下にきたタイミングで、jQueryでCSSを変更してボタンをスライドしながら表示する
+Accessのタイトルが画面下にきたタイミングで、jQueryでCSSを変更してボタンをスライドしながら非表示にする
+※main.jsの「サイドボタンを表示」を参照
+*/
+#side-btn {
+  border: solid 1px #fff;
   position: fixed;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 80px;
-  width: 100%;
-  background: none;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.5s;
-}
-.header .header-container {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
-  margin: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.header .header-logo {
-  line-height: 30px;
-}
-.header .header-logo img {
-  width: 140px;
-  height: 20px;
-}
-.header .header-logo img:hover {
-  opacity: 0.7;
-  transition: 0.2s ease-in-out;
+  right: -144px;
+  bottom: 200px;
+  transform: rotate(-90deg) translateY(60px);
+  transition: 0.6s;
+  z-index: 30;
 }
 
-.header.active {
-  opacity: 1;
-}
-
-/* ハンガーメニュー */
-.cp-header03__hamburger__button {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 95px;
-  bottom: 0;
-  width: 42px;
-  height: 42px;
-  margin: auto;
-  z-index: 3;
-  cursor: pointer;
-  text-align: center;
-}
-
-.cp-header03__hamburger__button span {
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  left: 6px;
-  background: #fff;
-  transition: 0.2s ease-in-out;
-}
-
-.cp-header03__hamburger__button span:nth-child(1) {
-  top: 10px;
-}
-
-.cp-header03__hamburger__button span:nth-child(2) {
-  top: 20px;
-}
-
-.cp-header03__hamburger__button span:nth-child(3) {
-  top: 30px;
-}
-
-.cp-header03__hamburger__button.active span {
-  background: #fff;
-}
-
-.cp-header03__hamburger__button.active span:nth-child(1) {
-  top: 16px;
-  left: 6px;
-  transform: rotate(-45deg);
-}
-
-.cp-header03__hamburger__button.active span:nth-child(2),
-.cp-header03__hamburger__button.active span:nth-child(3) {
-  top: 16px;
-  transform: rotate(45deg);
-}
-
-.cp-header03__hamburger__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  transform: translateX(100%);
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  transition: all 0.2s;
-  background: #707070;
-}
-
-.cp-header03__hamburger__content.active {
-  transform: translateX(0%);
-}
-
-.cp-header03__hamburger__item {
-  text-align: center;
-}
-
-.cp-header03__hamburger__item a {
+#side-btn a {
+  width: 165px;
+  font-size: 0.875rem;
   display: inline-block;
-  padding: 16px;
-  color: #fff;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1024px) {
-  .cp-header03 {
-    position: fixed;
-  }
-}
-@media screen and (max-width: 599px) {
-  .header-container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  /* ハンバーガーメニュー */
-  .cp-header03__hamburger__button {
-    right: 10px;
-  }
-}
-#nav {
-  position: absolute;
-  top: -40%;
-  width: 40%;
-  height: 100vh;
-  background: #fff;
-  transition: 0.7s;
-}
-#nav ul {
-  padding-top: 80px;
-}
-#nav ul li {
-  list-style-type: none;
-  font-size: 20px;
-}
-#nav a {
-  display: block;
-  margin: 0 15px;
-  padding: 10px;
-  transition: 0.5s;
-  text-decoration: none;
-  color: #000;
-}
-#nav a :hover {
-  color: #fff;
-  background: #cd5c5c;
-  border-bottom: none;
-}
-
-/*メインビジュアル*/
-.mainvisual {
-  display: flex;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-/*タイトル*/
-.title {
-  width: 100%;
-  text-align: center;
-}
-.title h1 {
-  position: relative;
-  opacity: 0;
-  font-size: 6.2rem;
-  font-weight: normal;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 2s;
-}
-.title h1.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 48px;
-  }
-}
-/*インフォメーション*/
-.information {
-  margin-bottom: 154px;
-}
-.information h2 {
-  position: relative;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 2s;
-}
-.information h2.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.information p {
-  position: relative;
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 2s;
-}
-.information p:nth-of-type(1) {
-  margin: 0;
-  font-size: 1.5rem;
-}
-.information p:nth-of-type(2) {
-  margin: 6px 0 0;
-  font-size: 1.125rem;
-}
-.information p:nth-of-type(3) {
-  margin: 30px 0 25px;
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-.information p:nth-of-type(4) {
-  margin: 0 0 6px;
-}
-.information p:nth-of-type(5) {
-  margin: 0;
-}
-
-p.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media screen and (max-width: 768px) {
-  .information h2 {
-    font-size: 2rem;
-  }
-  .information:nth-of-type(2) {
-    margin: 6px 0 0;
-    font-size: 1.125rem;
-  }
-  .information:nth-of-type(3) {
-    margin: 30px 0 25px;
-    font-weight: bold;
-    font-size: 2rem;
-  }
-  .information:nth-of-type(4) {
-    margin: 0 0 6px;
-  }
-  .information:nth-of-type(5) {
-    margin: 0;
-  }
-}
-/*ギャラリー*/
-.gallery img {
-  width: 355px;
-}
-.gallery .flower-one {
-  height: 488px;
-}
-.gallery .flower-two {
-  height: 235px;
-}
-.gallery .flower-three {
-  height: 355px;
-}
-.gallery .flower-four {
-  height: 533px;
-}
-.gallery .flower-five {
-  height: 444px;
-}
-.gallery .flower-six {
-  height: 235px;
-}
-.gallery ul {
-  display: flex;
-  flex-direction: column;
-}
-.gallery li {
-  margin-bottom: 60px;
-}
-.gallery li:nth-child(odd) {
-  text-align: left;
-}
-.gallery li:nth-child(even) {
-  text-align: right;
-}
-
-.gallery-title {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: 2s;
-}
-
-.gallery-title.fadeIn {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#flower_one {
-  transform: translateY(200px);
-  transition: transform 2s, opacity 1s;
-  opacity: 0;
-}
-
-#flower_one.fadeIn {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-#flower_two {
-  transform: translateY(200px);
-  transition: transform 2s, opacity 1s;
-  opacity: 0;
-}
-
-#flower_two.fadeIn {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-#flower_three {
-  transform: translateY(200px);
-  transition: transform 2s, opacity 1s;
-  opacity: 0;
-}
-
-#flower_three.fadeIn {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-#flower_four {
-  transform: translateY(200px);
-  transition: transform 2s, opacity 1s;
-  opacity: 0;
-}
-
-#flower_four.fadeIn {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-#flower_five {
-  transform: translateY(200px);
-  transition: transform 2s, opacity 1s;
-  opacity: 0;
-}
-
-#flower_five.fadeIn {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-#flower_six {
-  transform: translateY(200px);
-  transition: transform 2s, opacity 1s;
-  opacity: 0;
-}
-
-#flower_six.fadeIn {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .gallery {
-    padding: 30px;
-  }
-  .gallery .gallery-title {
-    font-size: 2rem;
-  }
-  .gallery .wrapper ul {
-    display: block;
-    padding-left: 0;
-  }
-  .gallery .wrapper li {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .gallery .wrapper img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .flower-one {
-    height: 100%;
-  }
-
-  .flower-two {
-    height: 100%;
-  }
-
-  .flower-three {
-    height: 100%;
-  }
-
-  .flower-four {
-    height: 100%;
-  }
-
-  .flower-five {
-    height: 100%;
-  }
-
-  .flower-six {
-    height: 100%;
-  }
-
-  li:nth-child(odd) {
-    text-align: center;
-  }
-
-  li:nth-child(even) {
-    text-align: center;
-  }
-}
-/*access*/
-.access {
-  position: relative;
-  transition: 0.5s;
-  margin-top: 493px;
-  z-index: 20;
-}
-.access p:nth-of-type(1) {
-  margin: 0 0 24px;
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-.access p:nth-of-type(2) {
-  margin: 6px 0 0;
-  font-size: 1.125rem;
-}
-.access p:nth-of-type(3) {
-  margin: 30px 0 5px;
-}
-.access p:nth-of-type(4) {
-  margin: 0 0 31px;
-}
-.access .access-btn {
-  display: block;
-  width: 270px;
-  margin: 0 auto;
-  padding: 19px 0;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .access h2 {
-    font-size: 2rem;
-  }
-  .access p:nth-of-type(1) {
-    font-size: 1.75rem;
-  }
-}
-/*コンタクト*/
-.contact {
-  margin-top: 493px;
-}
-.contact .contact-btn {
-  position: relative;
-  display: block;
-  width: 400px;
-  margin: 0 auto 20px;
-  padding: 32px 0;
-  border: 1px solid #fff;
-  color: #fff;
+  letter-spacing: 0.1em;
+  padding: 15px 0;
   transition: 0.3s;
 }
-.contact .contact-btn:hover {
-  opacity: 0.5;
-}
-.contact .contact-btn::before {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  bottom: 40px;
-  right: -40px;
-  transition: 0.3s;
-}
-.contact .contact-btn:hover::before {
-  right: -50px;
-}
-.contact .contact-btn::after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  bottom: 45px;
-  right: -40px;
-  transform: rotate(30deg);
-  transition: 0.3s;
-}
-.contact .contact-btn:hover::after {
-  right: -50px;
-}
-.contact .contact-btn:last-child {
-  margin-bottom: 0;
+
+#side-btn a:last-of-type {
+  border-left: solid 1px #fff;
 }
 
+#side-btn a:hover {
+  opacity: 0.7;
+}
+
+/*
+Accessの背景画像
+初期状態は「display: none;」で非表示にしておく
+Accessのタイトルが画面下にきたタイミングで、jQueryのfadeInで表示する
+Contactのタイトルが画面下にきたタイミングで、jQueryのfadeOutで非表示にする
+「position: fixed;」で固定し「width: 100vw;」「height: 100vh;」で全画面表示する
+※main.jsの「Accessの背景画像を表示」を参照
+*/
 .bg {
   background: url("../img/bg.jpg") center center repeat !important;
   width: 100vw;
@@ -929,91 +109,429 @@ p.show {
   z-index: 10;
 }
 
-@media screen and (max-width: 768px) {
-  .contact h2 {
+/*
+フェード表示
+InformationとGalleryの画像を下からふわっと表示させるためのクラス
+「transform: translate(0, 50%);」で下にさげた状態で、
+「opacity: 0;」で非表示にしておく
+*/
+.fadein {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 2s;
+}
+
+/*
+fadeinクラスの要素が画面下にきたタイミングで、jQueryのinviewにてshowクラスを追加して
+「transform: translate(0, 0);」と「opacity: 1;」で表示させる
+※main.jsの「フェード表示」を参照
+*/
+.fadein.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+/*
+ヘッダーロゴ
+初期状態は「display: none;」で非表示にしておく
+所定のスクロール位置にきたらjQueryのfadeInで表示する
+※main.jsの「ロゴ、ハンバーガーメニューの表示」を参照
+*/
+.logo {
+  line-height: 1px;
+  position: fixed;
+  top: 35px;
+  left: 30px;
+  /* 一番上にくるように設定 */
+  z-index: 40;
+  display: none;
+}
+
+.logo a {
+  display: block;
+}
+
+/*
+ハンバーガ―メニュー
+初期状態は「display: none;」で非表示にしておく
+所定のスクロール位置にきたらjQueryのfadeInで表示する
+※main.jsの「ロゴ、ハンバーガーメニューの表示」を参照
+*/
+.hamburger {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  /* 一番上にくるように設定 */
+  z-index: 40;
+  display: none;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 6px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 11px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 21px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 31px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 21px;
+  left: 6px;
+  transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 21px;
+  transform: rotate(45deg);
+}
+
+#navi {
+  width: 100%;
+  background-color: #fff;
+  color: #050507;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: 0.6s;
+  /* ロゴ、ハンバーガーより下でAccessページの背景画像よりも上にくるよう設定 */
+  z-index: 30;
+}
+
+#navi ul {
+  width: 100%;
+  background-color: #050507;
+  padding: 80px 0 30px 0;
+}
+
+#navi ul li {
+  padding: 10px 0;
+}
+
+#navi ul li a {
+  display: block;
+}
+
+/*
+メニュー表示
+ハンバーガーメニューがクリックされた際に、jQueryで#naviにactiveクラスを追加して、
+メニューを上から下にスライドさせて表示する
+*/
+#navi.active {
+  transform: translateY(0%);
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  display: flex;
+  justify-content: center;
+  /* スクロールで画像を拡大させた際に、横スクロールが出ないよう設定 */
+  overflow-x: hidden;
+}
+
+/*
+スクロールしたタイミングでjQueryにて画像を拡大するが、
+その際に画像が縮まないよう「flex-shrink: 0;」を設定する
+*/
+#mainvisual img {
+  width: calc(100%/3);
+  height: 100vh;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*-------------------------------------------
+Information
+-------------------------------------------*/
+#information {
+  margin-bottom: 140px;
+}
+
+#information .info-date-en {
+  display: block;
+  font-size: 1.5rem;
+}
+
+#information .info-time-en {
+  display: block;
+  font-size: 1.125rem;
+}
+
+#information .info-place {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#information .info-date-ja {
+  font-size: 1.125rem;
+}
+
+/*-------------------------------------------
+Gallery
+-------------------------------------------*/
+#gallery {
+  margin-bottom: 480px;
+}
+
+#gallery .list li {
+  margin-bottom: 60px;
+}
+
+#gallery .list li img {
+  width: 48%;
+}
+
+/* 奇数のliタグは左寄せ */
+#gallery .list li:nth-child(odd) {
+  text-align: left;
+}
+
+/* 偶数のliタグは右寄せ */
+#gallery .list li:nth-child(even) {
+  text-align: right;
+}
+
+/*-------------------------------------------
+Access
+-------------------------------------------*/
+/*
+「z-index: 20;」でコンテンツが背景画像の上にくるようにする
+※デフォルトのposition（static）では、z-indexを指定できないため。
+「position: relative;」設定する
+*/
+#access {
+  margin-bottom: 480px;
+  position: relative;
+  z-index: 20;
+}
+
+#access .place {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#access .address {
+  margin-bottom: 20px;
+}
+
+#access .contact {
+  margin-bottom: 30px;
+}
+
+#access .btn {
+  border: solid 1px #fff;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 82px;
+  transition: 0.3s;
+}
+
+#access .btn:hover {
+  background-color: #050507;
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+/*
+「z-index: 20;」でコンテンツが背景画像の上にくるようにする
+*/
+#contact {
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 20;
+}
+
+#contact .btn {
+  width: 400px;
+  border: solid 1px #7d7d7d;
+  color: #fff;
+  display: block;
+  padding: 30px 0;
+  margin: 0 auto 20px auto;
+  position: relative;
+  transition: 0.3s;
+}
+
+/*
+ボタン矢印
+*/
+#contact .btn::before,
+#contact .btn::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  height: 1px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/*
+矢印の直線部分
+*/
+#contact .btn::before {
+  width: 120px;
+  top: 48px;
+}
+
+/*
+矢印の先端部分
+「rotate(25deg)」で角度をつける
+*/
+#contact .btn::after {
+  width: 15px;
+  top: 45px;
+  transform: rotate(25deg);
+}
+
+#contact .btn:hover {
+  opacity: 0.7;
+}
+
+#contact .btn:hover::before,
+#contact .btn:hover::after {
+  right: -50px;
+}
+
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+#footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: solid 1px #fff;
+  font-size: 0.75rem;
+  padding: 80px 30px;
+  text-align: left;
+}
+
+#footer p {
+  line-height: 1.6;
+}
+
+#footer .sns {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#footer .sns li {
+  margin-right: 15px;
+}
+
+#footer .copyright {
+  display: flex;
+  align-items: center;
+}
+
+#footer .copyright li:last-child {
+  margin-left: 30px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 900px) {
+  .site-title {
+    font-size: 3rem;
+    margin: 50px 0;
+  }
+
+  .section-title {
     font-size: 2rem;
   }
 
-  .contact-btn::before {
-    opacity: 0;
+  /*-------------------------------------------
+  Information
+  -------------------------------------------*/
+  #information {
+    margin-bottom: 80px;
   }
-  .contact-btn::after {
-    opacity: 0;
+
+  #information .info-date-en,
+#information .info-time-en,
+#information .info-date-ja {
+    font-size: 1rem;
   }
-}
-/*サイドバー*/
-.sidebar-box {
-  box-sizing: border-box;
-  transform: translateX(50px);
-  transition: 0.5s;
-  position: fixed;
-  align-items: center;
-  bottom: 100px;
-  right: 0;
-  text-align: center;
-  width: 50px;
-  height: 160px;
-  border: 1px solid #9B9B9C;
-  border-right: none;
-  color: #9B9B9C;
-  -ms-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
-}
-.sidebar-box a {
-  transition: 0.5s;
-  color: #9B9B9C;
-}
-.sidebar-box a:hover {
-  opacity: 0.5;
-}
 
-.sidebar-box.appear {
-  transform: translateX(0);
-}
+  #information .info-place {
+    font-size: 2rem;
+  }
 
-.sidebar-box_one {
-  bottom: 230px;
-  right: 0;
-  border-bottom: none;
-}
+  /*-------------------------------------------
+  Gallery
+  -------------------------------------------*/
+  #gallery {
+    margin-bottom: 280px;
+  }
 
-.sidebar-box_two {
-  bottom: 70px;
-  right: 0;
-}
+  #gallery .list li {
+    margin-bottom: 30px;
+  }
 
-/*フッター*/
-footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 200px 0 0 0;
-  padding: 83px 30px 80px;
-  border-top: 1px solid #fff;
-  font-size: 0.7rem;
-}
-footer .footer-left-ul {
-  display: flex;
-  padding: 0;
-}
-footer .footer-left-ul li {
-  color: #fff;
-  padding-left: 18px;
-}
-footer .footer-left-ul li:first-child {
-  padding: 0;
-}
-footer .footer-left-ul li a {
-  color: #fff;
-}
-footer .footer-right-ul {
-  display: flex;
-  align-items: flex-end;
-  padding: 0;
-}
-footer .footer-right-ul li {
-  color: #fff;
-  padding-left: 28px;
-}
-footer .footer-right-ul li:first-child {
-  padding: 0;
+  #gallery .list li img {
+    width: 100%;
+  }
+
+  /*-------------------------------------------
+  Access
+  -------------------------------------------*/
+  #access {
+    margin-bottom: 280px;
+  }
+
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  #contact .btn {
+    width: 100%;
+  }
+
+  /*
+  スマホの時は矢印を消す
+  */
+  #contact .btn::before,
+#contact .btn::after {
+    content: none;
+  }
+
+  /*-------------------------------------------
+  Footer
+  -------------------------------------------*/
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 30px;
+  }
+
+  #footer .sns {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
