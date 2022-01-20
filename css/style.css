@@ -381,6 +381,26 @@ p {
   text-align: center;
 }
 
+@-webkit-keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ヘッダー */
 .header {
   position: fixed;
@@ -560,13 +580,43 @@ p {
   text-align: center;
 }
 .title h1 {
+  position: relative;
+  opacity: 0;
   font-size: 6.2rem;
   font-weight: normal;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 2s;
+}
+.title h1.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
 /*インフォメーション*/
 .information {
   margin-bottom: 154px;
+}
+.information h2 {
+  position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 2s;
+}
+.information h2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.information p {
+  position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 2s;
 }
 .information p:nth-of-type(1) {
   margin: 0;
@@ -588,6 +638,31 @@ p {
   margin: 0;
 }
 
+p.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+  .information h2 {
+    font-size: 2rem;
+  }
+  .information:nth-of-type(2) {
+    margin: 6px 0 0;
+    font-size: 1.125rem;
+  }
+  .information:nth-of-type(3) {
+    margin: 30px 0 25px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .information:nth-of-type(4) {
+    margin: 0 0 6px;
+  }
+  .information:nth-of-type(5) {
+    margin: 0;
+  }
+}
 /*ギャラリー*/
 .gallery img {
   width: 355px;
@@ -624,9 +699,142 @@ p {
   text-align: right;
 }
 
+.gallery-title {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 2s;
+}
+
+.gallery-title.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#flower_one {
+  transform: translateY(200px);
+  transition: transform 2s, opacity 1s;
+  opacity: 0;
+}
+
+#flower_one.fadeIn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#flower_two {
+  transform: translateY(200px);
+  transition: transform 2s, opacity 1s;
+  opacity: 0;
+}
+
+#flower_two.fadeIn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#flower_three {
+  transform: translateY(200px);
+  transition: transform 2s, opacity 1s;
+  opacity: 0;
+}
+
+#flower_three.fadeIn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#flower_four {
+  transform: translateY(200px);
+  transition: transform 2s, opacity 1s;
+  opacity: 0;
+}
+
+#flower_four.fadeIn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#flower_five {
+  transform: translateY(200px);
+  transition: transform 2s, opacity 1s;
+  opacity: 0;
+}
+
+#flower_five.fadeIn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#flower_six {
+  transform: translateY(200px);
+  transition: transform 2s, opacity 1s;
+  opacity: 0;
+}
+
+#flower_six.fadeIn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding: 30px;
+  }
+  .gallery .gallery-title {
+    font-size: 2rem;
+  }
+  .gallery .wrapper ul {
+    display: block;
+    padding-left: 0;
+  }
+  .gallery .wrapper li {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .gallery .wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .flower-one {
+    height: 100%;
+  }
+
+  .flower-two {
+    height: 100%;
+  }
+
+  .flower-three {
+    height: 100%;
+  }
+
+  .flower-four {
+    height: 100%;
+  }
+
+  .flower-five {
+    height: 100%;
+  }
+
+  .flower-six {
+    height: 100%;
+  }
+
+  li:nth-child(odd) {
+    text-align: center;
+  }
+
+  li:nth-child(even) {
+    text-align: center;
+  }
+}
 /*access*/
 .access {
+  position: relative;
   transition: 0.5s;
+  margin-top: 493px;
+  z-index: 20;
 }
 .access p:nth-of-type(1) {
   margin: 0 0 24px;
@@ -652,6 +860,14 @@ p {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .access h2 {
+    font-size: 2rem;
+  }
+  .access p:nth-of-type(1) {
+    font-size: 1.75rem;
+  }
+}
 /*コンタクト*/
 .contact {
   margin-top: 493px;
@@ -703,7 +919,7 @@ p {
 }
 
 .bg {
-  background: url("/img/bg.jpg") center center repeat !important;
+  background: url("../img/bg.jpg") center center repeat !important;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -711,6 +927,59 @@ p {
   left: 0;
   display: none;
   z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-btn::before {
+    opacity: 0;
+  }
+  .contact-btn::after {
+    opacity: 0;
+  }
+}
+/*サイドバー*/
+.sidebar-box {
+  box-sizing: border-box;
+  transform: translateX(50px);
+  transition: 0.5s;
+  position: fixed;
+  align-items: center;
+  bottom: 100px;
+  right: 0;
+  text-align: center;
+  width: 50px;
+  height: 160px;
+  border: 1px solid #9B9B9C;
+  border-right: none;
+  color: #9B9B9C;
+  -ms-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+}
+.sidebar-box a {
+  transition: 0.5s;
+  color: #9B9B9C;
+}
+.sidebar-box a:hover {
+  opacity: 0.5;
+}
+
+.sidebar-box.appear {
+  transform: translateX(0);
+}
+
+.sidebar-box_one {
+  bottom: 230px;
+  right: 0;
+  border-bottom: none;
+}
+
+.sidebar-box_two {
+  bottom: 70px;
+  right: 0;
 }
 
 /*フッター*/
